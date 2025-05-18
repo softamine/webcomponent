@@ -19,7 +19,7 @@ class ConsoleWc extends HTMLElement {
         }
       </style>
       <h2>Console Web Component</h2>
-      <p>This is the <code>&lt;console-wc&gt;</code> web component.</p>
+      <p>This is the <code>&lt;console-wc&gt;</code> web component!</p>
     `;
 
     this.shadowRoot.appendChild(wrapper);
