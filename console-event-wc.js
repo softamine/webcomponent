@@ -87,7 +87,7 @@ class ConsoleOctroi extends HTMLElement {
         bubbles: true,
         composed: true, 
         detail: {
-          message: `Command executed at ${timestamp}`,
+          message: `il est ${timestamp}`,
           timestamp: timestamp
         }
       });
