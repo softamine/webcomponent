@@ -65,8 +65,8 @@ class ConsoleOctroi extends HTMLElement {
       </div>
       
       <div class="button-container">
-        <button id="execute-button">Execute Command</button>
-        <button id="clear-button">Clear Console</button>
+        <button id="execute-button">envoi de l event</button>
+        <button id="clear-button">Reset</button>
       </div>
     `;
   }
@@ -80,7 +80,7 @@ class ConsoleOctroi extends HTMLElement {
       const timestamp = new Date().toLocaleTimeString();
       const outputLine = document.createElement('div');
       outputLine.className = 'console-line';
-      outputLine.innerHTML = `<span class="prompt">></span> Command executed at ${timestamp}`;
+      outputLine.innerHTML = `<span class="prompt">></span> il est ${timestamp}`;
       consoleOutput.appendChild(outputLine);
 
       const event = new CustomEvent('console-output', {
@@ -96,7 +96,7 @@ class ConsoleOctroi extends HTMLElement {
     });
 
     clearButton.addEventListener('click', () => {
-      consoleOutput.innerHTML = '<div class="console-line"><span class="prompt">></span> Console cleared</div>';
+      consoleOutput.innerHTML = '<div class="console-line"><span class="prompt">></span> la Console octroi is now clearedd</div>';
     });
   }
 }
